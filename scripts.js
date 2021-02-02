@@ -18,8 +18,8 @@ window.onload = function() {
               label: 'Risk Taking',
               data: [3,6,3,16,5],
               hidden: true,
-              backgroundColor: ["#D32011","#007229","#cc092f","#d90012","#FFD200"],
-              borderColor: ["2AD2B","#FDEF42","#FFFFFF","#FFFFFF","#002395"],
+              backgroundColor: ["red","blue","green","purple","#FFD200"],
+              borderColor: ["black","#FDEF42","#FFFFFF","#FFFFFF","#002395"],
 
               // this dataset is drawn below
               order: 2
