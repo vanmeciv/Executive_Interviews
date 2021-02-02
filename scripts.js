@@ -15,17 +15,40 @@ window.onload = function() {
       type: 'bar',
       data: {
           datasets: [{
-              label: 'Executive Interviews',
-              data: [1,2,3,4,5],
+              label: 'Risk Taking',
+              data: [3,6,3,16,5],
               hidden: true,
               backgroundColor: ["#D32011","#007229","#cc092f","#d90012","#FFD200"],
               borderColor: ["2AD2B","#FDEF42","#FFFFFF","#FFFFFF","#002395"],
 
               // this dataset is drawn below
               order: 2
-          }, {
-              label: 'Likert',
-              data: [3,4,12,4,5],
+          },
+          {
+              label: 'Information Access',
+              data: [3,5,12,4,2],
+              backgroundColor: ["#D32011","#007229","#cc092f","#d90012","#00B9E4"],
+              borderColor: ["#007A36","#FFFFFF","#ffcb00","#0033A0","#ED2939"],
+
+              // Changes this dataset to become a line
+              type: 'line',
+              // this dataset is drawn on top
+              order: 1
+          },
+          {
+              label: 'Autonomy',
+              data: [3,1,12,7,5],
+              backgroundColor: ["#D32011","#007229","#cc092f","#d90012","#00B9E4"],
+              borderColor: ["#007A36","#FFFFFF","#ffcb00","#0033A0","#ED2939"],
+
+              // Changes this dataset to become a line
+              type: 'line',
+              // this dataset is drawn on top
+              order: 1
+          },
+          {
+              label: 'Company Landscape',
+              data: [3,3,2,4,6],
               backgroundColor: ["#D32011","#007229","#cc092f","#d90012","#00B9E4"],
               borderColor: ["#007A36","#FFFFFF","#ffcb00","#0033A0","#ED2939"],
 
@@ -58,9 +81,10 @@ window.onload = function() {
       							suggestedMin: 1,
 
       							// the data maximum used for determining the ticks is Math.max(dataMax, suggestedMax)
-      							suggestedMax: 18,
+      							suggestedMax: 20,
                     stepSize: 1,
                     showLines: true,
+                    lineHeight:4,
                     padding: 10,
                     fontColor: '#000',
                     fontSize: 14,
