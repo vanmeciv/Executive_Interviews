@@ -2,42 +2,69 @@
 <html>
   <head>
     <title>Executive Interviews</title>
-
     <link rel="stylesheet" type="text/css" href="styles.css">
     <script src='https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.js'></script>
+    <script src="scripts.js"></script>
+    <!-- splide -->
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
+    <script src="splide/dist/js/splide.min.js"></script>
+    <!-- Link to the file hosted on your server, -->
+    <link rel="stylesheet" href="splide/dist/css/splide.min.css">
+
+    <!-- or the reference on CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
+
   </head>
   <body>
-    <div class="wrapperOne">
-      <h1>Executive Interviews
-        <!-- <a href="">Lorem Ipsum</a><a href="">Lorem Ipsum</a> -->
-      </h1>
-      <h2>Likert Scales</h2>
-      <canvas id="myChartOne" width="800" height="800"></canvas>
+    <h1>Executive Interviews
+      <!-- <a href="">Lorem Ipsum</a><a href="">Lorem Ipsum</a> -->
+    </h1>
+    <h2>Likert Scales</h2>
 
+<!-- Base slider code -->
+    <!-- <div class="splide">
+    	<div class="splide__track">
+    		<div class="splide__list">
+    			<li class="splide__slide">Slide 01</li>
+    			<li class="splide__slide">Slide 02</li>
+    			<li class="splide__slide">Slide 03</li>
+    		</div>
+    	</div>
+    </div> -->
+
+<div class="splide">
+  <div class="splide__track">
+    <div class="splide__list">
+          <div class="splide__slide">
+            <div class="wrapperOne">
+              <canvas id="myChartOne" width="800" height="800"></canvas>
+            </div>
+          </div>
+          <div class="splide__slide">
+            <div class="wrapperTwo">
+              <!-- <h1>TITLE</h1> -->
+              <!-- <h2>This data is compiled from the following sources: <a href="#">(reference)</a></h2> -->
+              <canvas id="myChartTwo" width="800" height="800"></canvas>
+            </div>
+          </div>
+          <div class="splide__slide">
+            <div class="wrapperThree">
+              <!-- <h1>Likert<br>as of 11FEB2020</h1>
+              <h2>Likert <a href="">COVID-19</a></h2> -->
+              <canvas id="myChartThree" width="800" height="800"></canvas>
+            </div>
+          </div>
+          <div class="splide__slide">
+            <div class="wrapperFour">
+              <!-- <h1>Likert</h1>
+              <h1>Likert</h1>
+              <h2>Likert<a href="">COVID-19</a></h2> -->
+              <canvas id="myChartFour" width="800" height="800"></canvas>
+            </div>
+          </div>
     </div>
-
-    <div class="wrapperTwo">
-      <!-- <h1>TITLE</h1> -->
-      <!-- <h2>This data is compiled from the following sources: <a href="#">(reference)</a></h2> -->
-      <canvas id="myChartTwo" width="800" height="800"></canvas>
-
-    </div>
-
-    <div class="wrapperThree">
-      <!-- <h1>Likert<br>as of 11FEB2020</h1>
-      <h2>Likert <a href="">COVID-19</a></h2> -->
-      <canvas id="myChartThree" width="800" height="800"></canvas>
-
-    </div>
-
-    <div class="wrapperFour">
-      <!-- <h1>Likert</h1>
-      <h1>Likert</h1>
-      <h2>Likert<a href="">COVID-19</a></h2> -->
-      <canvas id="myChartFour" width="800" height="800"></canvas>
-
-    </div>
-
+  </div>
+</div>
 <!-- <br>
 <br>
 <br>
@@ -50,7 +77,9 @@
 
     </div> -->
 
-    <script src="scripts.js"></script>
+    <script>
+    	new Splide( '.splide' ).mount();
+    </script>
 
 
   </body>
