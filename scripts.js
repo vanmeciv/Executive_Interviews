@@ -1,4 +1,4 @@
-
+//Executive Interviews
 window.onload = function() {
   Chart.defaults.global.elements.rectangle.borderWidth = 2;
   Chart.defaults.global.elements.point.radius = 2;
@@ -6,13 +6,13 @@ window.onload = function() {
   Chart.defaults.global.elements.point.hoverBorderWidth = 6;
   Chart.defaults.global.elements.point.pointStyle = 'crossRot';
   // Chart.defaults.global.defaultFontFamily = "'Montserrat', sans-serif;";
-  Chart.defaults.global.legend.position = 'bottom';
-  Chart.defaults.global.legend.backgroundColor = '#000';
+  // Chart.defaults.global.legend.position = 'bottom';
+  // Chart.defaults.global.legend.backgroundColor = '#000';
 
 // Risk Taking Chart
   var ctx = document.getElementById("myChartOne");
   var myChartOne = new Chart(ctx, {
-      type: 'bar',
+      type: 'line',
       data: {
           datasets: [
           //   {
@@ -28,57 +28,62 @@ window.onload = function() {
           {
               label: 'I am encouraged to speak my mind about the way I think things should be done in the firm.',
               data: [0,0,0,1,1],
-              backgroundColor: ["green","yellow","black","red","blue"],
-              borderColor: ["#007A36","#FFFFFF","#ffcb00","#0033A0","#ED2939"],
+              // backgroundColor: ["green","yellow","black","red","blue"],
+              // borderColor: ["#007A36","#FFFFFF","#ffcb00","#0033A0","#ED2939"],
 
               // Changes this dataset to become a line
               type: 'line',
               // this dataset is drawn on top
-              order: 1
+              order: 1,
+              fill: false
           },
           {
               label: 'I am afraid to take chances with "risky" ideas in this organization.',
               data: [1,1,0,0,0],
-              backgroundColor: ["green","yellow","black","red","blue"],
-              borderColor: ["#007A36","#FFFFFF","#ffcb00","#0033A0","#ED2939"],
+              backgroundColor: "rgba(29,241,13,180)",
+              // borderColor: ["#007A36","#FFFFFF","#ffcb00","#0033A0","#ED2939"],
 
               // Changes this dataset to become a line
               type: 'line',
               // this dataset is drawn on top
-              order: 1
+              order: 2,
+              fill: false
           },
           {
               label: 'I can take chances here without fear of negative repercussions.',
               data: [0,0,0,1,1],
-              backgroundColor: ["green","yellow","black","red","blue"],
-              borderColor: ["#007A36","#FFFFFF","#ffcb00","#0033A0","#ED2939"],
+              // backgroundColor: ["green","yellow","black","red","blue"],
+              // borderColor: ["#007A36","#FFFFFF","#ffcb00","#0033A0","#ED2939"],
 
               // Changes this dataset to become a line
               type: 'line',
               // this dataset is drawn on top
-              order: 1
+              order: 3,
+              fill: false
           },
           {
               label: 'I am discouraged from experimenting with new ways of solving company problems.',
               data: [2,0,0,0,0],
-              backgroundColor: ["green","yellow","black","red","blue"],
-              borderColor: ["#007A36","#FFFFFF","#ffcb00","#0033A0","#ED2939"],
+              // backgroundColor: ["green","yellow","black","red","blue"],
+              // borderColor: ["#007A36","#FFFFFF","#ffcb00","#0033A0","#ED2939"],
 
               // Changes this dataset to become a line
               type: 'line',
               // this dataset is drawn on top
-              order: 1
+              order: 4,
+              fill: false
           },
           {
               label: 'It is fatal for me to make a mistake.',
               data: [2,0,0,0,0],
-              backgroundColor: ["green","yellow","black","red","blue"],
-              borderColor: ["#007A36","#FFFFFF","#ffcb00","#0033A0","#ED2939"],
+              // backgroundColor: ["green","yellow","black","red","blue"],
+              // borderColor: ["#007A36","#FFFFFF","#ffcb00","#0033A0","#ED2939"],
 
               // Changes this dataset to become a line
               type: 'line',
               // this dataset is drawn on top
-              order: 1
+              order: 5,
+              fill: false
           }],
           labels: ["Strongly Disagree","Disagree","Neither Nor","Agree","Strongly Agree"]},
       options: {
@@ -146,7 +151,7 @@ window.onload = function() {
   // Information Access Chart
     var ctx = document.getElementById("myChartTwo");
     var myChartTwo = new Chart(ctx, {
-        type: 'bar',
+        type: 'line',
         data: {
             datasets: [
             //   {
@@ -290,7 +295,7 @@ window.onload = function() {
     // Autonomy Chart
       var ctx = document.getElementById("myChartThree");
       var myChartThree = new Chart(ctx, {
-          type: 'bar',
+          type: 'line',
           data: {
               datasets: [
               //   {
@@ -413,7 +418,7 @@ window.onload = function() {
       // Company Landscape Chart
         var ctx = document.getElementById("myChartFour");
         var myChartFour = new Chart(ctx, {
-            type: 'bar',
+            type: 'line',
             data: {
                 datasets: [
                 //   {
