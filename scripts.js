@@ -8,6 +8,111 @@ window.onload = function() {
   // Chart.defaults.global.defaultFontFamily = "'Montserrat', sans-serif;";
   // Chart.defaults.global.legend.position = 'bottom';
   // Chart.defaults.global.legend.backgroundColor = '#000';
+//
+// //Testing horizontalBar chart
+//
+//   var barOptions_stacked = {
+//       tooltips: {
+//           enabled: false
+//       },
+//       hover :{
+//           animationDuration:0
+//       },
+//       scales: {
+//           xAxes: [{
+//               ticks: {
+//                   beginAtZero:true,
+//                   fontFamily: "'Helvetica Neue', sans-serif",
+//                   fontSize:11
+//               },
+//               scaleLabel:{
+//                   display:false
+//               },
+//               gridLines: {
+//               },
+//               stacked: true
+//           }],
+//           yAxes: [{
+//               gridLines: {
+//                   display:false,
+//                   color: "#fff",
+//                   zeroLineColor: "#fff",
+//                   zeroLineWidth: 0
+//               },
+//               ticks: {
+//                   fontFamily: "'Helvetica Neue', sans-serif",
+//                   fontSize:11
+//               },
+//               stacked: true
+//           }]
+//       },
+//       legend:{
+//           display:true
+//       },
+//
+//       animation: {
+//           onComplete: function () {
+//               var chartInstance = this.chart;
+//               var ctx = chartInstance.ctx;
+//               // ctx.textAlign = "start";
+//               // ctx.font = "12px Helvetica Neue";
+//               ctx.fillStyle = "#fff";
+//
+//               Chart.helpers.each(this.data.datasets.forEach(function (dataset, i) {
+//                   var meta = chartInstance.controller.getDatasetMeta(i);
+//                   Chart.helpers.each(meta.data.forEach(function (bar, index) {
+//                       data = dataset.data[index];
+//                       if(i==0){
+//                           ctx.fillText(data, 85, bar._model.y+4);
+//                       } else {
+//                           ctx.fillText(data, bar._model.x-25, bar._model.y+4);
+//                       }
+//                   }),this)
+//               }),this);
+//           }
+//       },
+//       pointLabelFontFamily : "Helvetica Neue",
+//       scaleFontFamily : "Helvetica Neue",
+//   };
+//
+//   var ctx = document.getElementById("Chart1");
+//   var myChart = new Chart(ctx, {
+//       type: 'horizontalBar',
+//       data: {
+//               labels: ["Statement 1", "Statement 2", "Statement 3", "Statement 4", "Statement 5"],
+//
+//               datasets: [{
+//                   label: "Strongly Disagree",
+//                   data: [2, 2, .25, 1, .25],
+//                   backgroundColor: "rgba(12,28,85, 1)",
+//                   // hoverBackgroundColor: "rgba(149,103,182,1)"
+//               },{
+//                   label: "Disagree",
+//                   data: [.25, .25, .25, 1, .25],
+//                   backgroundColor: "rgba(27,31,97, 1)",
+//                   // hoverBackgroundColor: "rgba(156,121,174,1)"
+//               },{
+//                   label: "Neutral",
+//                   data: [.25, .25, .25, .25, .25],
+//                   backgroundColor: "rgba(50,78,135, 1)",
+//                   // hoverBackgroundColor: "rgba(168,145,186,1)"
+//               },{
+//                   label: "Agree",
+//                   data: [.25, .25, 1, .25, 1],
+//                   backgroundColor: "rgba(80,134,200, 1)",
+//                   // hoverBackgroundColor: "rgba(192,175,208,1)"
+//               },{
+//                   label: "Strongly Agree",
+//                   data: [.25, .25, 1, .25, 1],
+//                   backgroundColor: "rgba(115,171,239, 1)",
+//                   // hoverBackgroundColor: "rgba(212,195,230,1)"
+//               }
+//             ]
+//       },
+//
+//       options: barOptions_stacked,
+//   });
+//
 
 // Risk Taking Chart
   var ctx = document.getElementById("myChartOne");
@@ -27,7 +132,7 @@ window.onload = function() {
           // },
           {
               label: 'I am encouraged to speak my mind about the way I think things should be done in the firm.',
-              data: [0,0,0,1,1],
+              data: [0,0,0,1,2],
               // backgroundColor: ["green","yellow","black","red","blue"],
               // borderColor: ["#007A36","#FFFFFF","#ffcb00","#0033A0","#ED2939"],
 
@@ -39,7 +144,7 @@ window.onload = function() {
           },
           {
               label: 'I am afraid to take chances with "risky" ideas in this organization.',
-              data: [1,1,0,0,0],
+              data: [2,1,0,0,0],
               backgroundColor: "rgba(29,241,13,180)",
               // borderColor: ["#007A36","#FFFFFF","#ffcb00","#0033A0","#ED2939"],
 
@@ -51,7 +156,7 @@ window.onload = function() {
           },
           {
               label: 'I can take chances here without fear of negative repercussions.',
-              data: [0,0,0,1,1],
+              data: [0,0,0,1,2],
               // backgroundColor: ["green","yellow","black","red","blue"],
               // borderColor: ["#007A36","#FFFFFF","#ffcb00","#0033A0","#ED2939"],
 
@@ -63,7 +168,7 @@ window.onload = function() {
           },
           {
               label: 'I am discouraged from experimenting with new ways of solving company problems.',
-              data: [2,0,0,0,0],
+              data: [3,0,0,0,0],
               // backgroundColor: ["green","yellow","black","red","blue"],
               // borderColor: ["#007A36","#FFFFFF","#ffcb00","#0033A0","#ED2939"],
 
@@ -75,7 +180,7 @@ window.onload = function() {
           },
           {
               label: 'It is fatal for me to make a mistake.',
-              data: [2,0,0,0,0],
+              data: [3,0,0,0,0],
               // backgroundColor: ["green","yellow","black","red","blue"],
               // borderColor: ["#007A36","#FFFFFF","#ffcb00","#0033A0","#ED2939"],
 
@@ -166,7 +271,7 @@ window.onload = function() {
             // },
             {
                 label: 'I get very little information about what other people are doing.',
-                data: [1,1,0,0,0],
+                data: [2,1,0,0,0],
                 backgroundColor: ["green","yellow","black","red","blue"],
                 borderColor: ["#007A36","#FFFFFF","#ffcb00","#0033A0","#ED2939"],
 
@@ -188,7 +293,7 @@ window.onload = function() {
             },
             {
                 label: 'I am up-to-date on what is going on in the organization.',
-                data: [0,0,0,0,2],
+                data: [0,0,0,0,3],
                 backgroundColor: ["green","yellow","black","red","blue"],
                 borderColor: ["#007A36","#FFFFFF","#ffcb00","#0033A0","#ED2939"],
 
@@ -199,7 +304,7 @@ window.onload = function() {
             },
             {
                 label: 'In my department, we are the last to hear about anything.',
-                data: [2,0,0,0,0],
+                data: [3,0,0,0,0],
                 backgroundColor: ["green","yellow","black","red","blue"],
                 borderColor: ["#007A36","#FFFFFF","#ffcb00","#0033A0","#ED2939"],
 
@@ -210,7 +315,7 @@ window.onload = function() {
             },
             {
                 label: 'I can go to top management with a problem and be heard.',
-                data: [1,0,0,0,1],
+                data: [1,0,0,0,2],
                 backgroundColor: ["green","yellow","black","red","blue"],
                 borderColor: ["#007A36","#FFFFFF","#ffcb00","#0033A0","#ED2939"],
 
@@ -221,7 +326,7 @@ window.onload = function() {
             },
             {
                 label: 'I believe that senior management is "in touch" with the opinions and thinking of the people who work here.',
-                data: [0,0,0,0,2],
+                data: [0,0,0,0,3],
                 backgroundColor: ["green","yellow","black","red","blue"],
                 borderColor: ["#007A36","#FFFFFF","#ffcb00","#0033A0","#ED2939"],
 
@@ -310,7 +415,7 @@ window.onload = function() {
               // },
               {
                   label: 'I am managed by my boss too tightly.',
-                  data: [1,0,1,0,0],
+                  data: [2,0,1,0,0],
                   backgroundColor: ["green","yellow","black","red","blue"],
                   borderColor: ["#007A36","#FFFFFF","#ffcb00","#0033A0","#ED2939"],
 
@@ -321,7 +426,7 @@ window.onload = function() {
               },
               {
                   label: 'I can use my personal initiative and judgment in carrying out my work.',
-                  data: [0,0,0,1,1],
+                  data: [0,0,0,1,2],
                   backgroundColor: ["green","yellow","black","red","blue"],
                   borderColor: ["#007A36","#FFFFFF","#ffcb00","#0033A0","#ED2939"],
 
@@ -332,7 +437,7 @@ window.onload = function() {
               },
               {
                   label: 'I seldom get a chance to do things without my boss "holding my hand".',
-                  data: [2,0,0,0,0],
+                  data: [3,0,0,0,0],
                   backgroundColor: ["green","yellow","black","red","blue"],
                   borderColor: ["#007A36","#FFFFFF","#ffcb00","#0033A0","#ED2939"],
 
@@ -343,7 +448,7 @@ window.onload = function() {
               },
               {
                   label: 'I am very closely supervised in my work.',
-                  data: [1,0,1,0,0],
+                  data: [1,0,1,0,1],
                   backgroundColor: ["green","yellow","black","red","blue"],
                   borderColor: ["#007A36","#FFFFFF","#ffcb00","#0033A0","#ED2939"],
 
@@ -433,7 +538,7 @@ window.onload = function() {
                 // },
                 {
                     label: 'Turf struggles among departments are common here.',
-                    data: [2,0,0,0,0],
+                    data: [3,0,0,0,0],
                     backgroundColor: ["green","yellow","black","red","blue"],
                     borderColor: ["#007A36","#FFFFFF","#ffcb00","#0033A0","#ED2939"],
 
@@ -444,7 +549,7 @@ window.onload = function() {
                 },
                 {
                     label: 'At my company, the departments "rise and fall" as one; there is little territorialism here.',
-                    data: [0,0,0,0,2],
+                    data: [0,0,0,0,3],
                     backgroundColor: ["green","yellow","black","red","blue"],
                     borderColor: ["#007A36","#FFFFFF","#ffcb00","#0033A0","#ED2939"],
 
@@ -455,7 +560,7 @@ window.onload = function() {
                 },
                 {
                     label: 'By and large, the different departments work cooperatively to an unusual degree here.',
-                    data: [0,0,0,0,2],
+                    data: [0,0,0,0,3],
                     backgroundColor: ["green","yellow","black","red","blue"],
                     borderColor: ["#007A36","#FFFFFF","#ffcb00","#0033A0","#ED2939"],
 
@@ -466,7 +571,7 @@ window.onload = function() {
                 },
                 {
                     label: 'I believe that conflicts between departments get in the way of getting things done.',
-                    data: [2,0,0,0,0],
+                    data: [3,0,0,0,0],
                     backgroundColor: ["green","yellow","black","red","blue"],
                     borderColor: ["#007A36","#FFFFFF","#ffcb00","#0033A0","#ED2939"],
 
