@@ -6,25 +6,26 @@ body {
   background-size: 100%;
   opacity: 1; */
 }
+
 img {
-
 }
-.wrapperOne {
+
+.wrapperFive {
   max-width: 800px;
   margin: 50px auto;
 }
 
-.wrapperTwo {
+.wrapperSix {
   max-width: 800px;
   margin: 50px auto;
 }
 
-.wrapperThree {
+.wrapperSeven {
   max-width: 800px;
   margin: 50px auto;
 }
 
-.wrapperFour {
+.wrapperEight {
   max-width: 800px;
   margin: 50px auto;
 }
