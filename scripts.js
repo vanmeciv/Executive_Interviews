@@ -1,3 +1,6 @@
+// Disable Right Click
+document.addEventListener('contextmenu', event => event.preventDefault());
+
 //Executive Interviews
 window.onload = function() {
   Chart.defaults.global.elements.rectangle.borderWidth = 2;
@@ -182,7 +185,7 @@ new Chart(document.getElementById("myChartSix"), {
       },
       title: {
         display: true,
-        text: 'Risk Taking'
+        text: 'Infomation Access'
       },
     }
 });
@@ -254,7 +257,7 @@ new Chart(document.getElementById("myChartSeven"), {
       },
       title: {
         display: true,
-        text: 'Risk Taking'
+        text: 'Autonomy'
       },
     }
 });
@@ -326,7 +329,7 @@ new Chart(document.getElementById("myChartEight"), {
       },
       title: {
         display: true,
-        text: 'Risk Taking'
+        text: 'Company Landscape'
       },
     }
 });
