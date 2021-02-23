@@ -82,6 +82,9 @@ new Chart(document.getElementById("myChartFive"), {
         enabled: false,
       },
       scale:{
+        pointLabels:{
+          fontSize: 22
+        },
         ticks:{
           stepSize: 1,
           min: -1,
