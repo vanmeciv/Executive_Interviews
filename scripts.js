@@ -83,7 +83,7 @@ new Chart(document.getElementById("myChartFive"), {
       },
       scale:{
         pointLabels:{
-          fontSize: 22
+          fontSize: 28
         },
         ticks:{
           stepSize: 1,
@@ -176,6 +176,9 @@ new Chart(document.getElementById("myChartSix"), {
         enabled: false,
       },
       scale:{
+        pointLabels:{
+          fontSize: 28
+        },
         ticks:{
           stepSize: 1,
           min: -1,
@@ -248,6 +251,9 @@ new Chart(document.getElementById("myChartSeven"), {
         enabled: false,
       },
       scale:{
+        pointLabels:{
+          fontSize: 28
+        },
         ticks:{
           stepSize: 1,
           min: -1,
@@ -320,6 +326,9 @@ new Chart(document.getElementById("myChartEight"), {
         enabled: false,
       },
       scale:{
+        pointLabels:{
+          fontSize: 28
+        },
         ticks:{
           stepSize: 1,
           min: -1,
