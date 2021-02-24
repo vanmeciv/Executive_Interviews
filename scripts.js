@@ -14,7 +14,7 @@ window.onload = function() {
   // Chart.defaults.global.legend.position = 'bottom';
   // Chart.defaults.global.legend.backgroundColor = '#000';
 
-var labels = ["Strongly Disgree", "Disagree", "Neutral", "Agree", "Strongly Agree"];
+var labels = ["Neutral", "Agree", "Strongly Agree","Strongly Disgree", "Disagree"];
 var data = [0,0,0,1,5]
 
 
@@ -32,7 +32,7 @@ new Chart(document.getElementById("myChartFive"), {
           borderColor: "#000",
           pointBorderColor: "#fff",
           pointBackgroundColor: "rgb(0, 128, 0, .5)", //green
-          data: [0,0,0,1,5]
+          data: [0,1,5,0,0]
         },
         {
           label: 'I am afraid to take chances with "risky" ideas in this organization.',
@@ -41,7 +41,7 @@ new Chart(document.getElementById("myChartFive"), {
           borderColor: "#000",
           pointBorderColor: "#fff",
           pointBackgroundColor: "rgb(0, 0, 255, .5)", //blue
-          data: [3,2,1,0,0]
+          data: [1,0,0,3,2]
         },
         {
           label: "I can take chances here without fear of negative repercussions.",
@@ -50,7 +50,7 @@ new Chart(document.getElementById("myChartFive"), {
           borderColor: "#000",
           pointBorderColor: "#fff",
           pointBackgroundColor: "rgb(255, 0, 0, .5)", //red
-          data: [0,0,0,2,4]
+          data: [0,2,4,0,0]
         },
         {
           label: "I am discouraged from experimenting with new ways of solving company problems.",
@@ -59,7 +59,7 @@ new Chart(document.getElementById("myChartFive"), {
           borderColor: "#000",
           pointBorderColor: "#fff",
           pointBackgroundColor: "rgb(255, 255, 0, .5)", //red
-          data: [4,2,0,0,0]
+          data: [0,0,0,4,2]
         },
         {
           label: "It is fatal for me to make a mistake.",
@@ -68,7 +68,7 @@ new Chart(document.getElementById("myChartFive"), {
           borderColor: "#000",
           pointBorderColor: "#fff",
           pointBackgroundColor: "rgb(128, 0, 128, .5", //purple
-          data: [4,2,0,0,0]
+          data: [0,0,0,4,2]
         }
       ]
     },
@@ -116,7 +116,7 @@ new Chart(document.getElementById("myChartSix"), {
           borderColor: "#000",
           pointBorderColor: "#fff",
           pointBackgroundColor: "rgb(0, 128, 0, .5)", //green
-          data: [2,4,0,0,0]
+          data: [0,0,0,2,4]
         },
         {
           label: 'It is difficult for me to approach senior management with a concern.',
@@ -126,7 +126,7 @@ new Chart(document.getElementById("myChartSix"), {
           pointBorderColor: "#fff",
           pointBackgroundColor: "rgb(0, 0, 255, .5)", //blue
           pointBorderColor: "#fff",
-          data: [3,3,0,0,0]
+          data: [0,0,0,3,3]
         },
         {
           label: "I am up-to-date on what is going on in the organization.",
@@ -135,7 +135,7 @@ new Chart(document.getElementById("myChartSix"), {
           borderColor: "#000",
           pointBorderColor: "#fff",
           pointBackgroundColor: "rgba(179,181,198,1)",
-          data: [0,0,0,2,4]
+          data: [0,2,4,0,0]
         },
         {
           label: "In my department, we are the last to hear about anything.",
@@ -144,7 +144,7 @@ new Chart(document.getElementById("myChartSix"), {
           borderColor: "#000",
           pointBorderColor: "#fff",
           pointBackgroundColor: ["rgb(255, 255, 0, .5)"], //yellow
-          data: [5,1,0,0,0]
+          data: [0,0,0,5,1]
         },
         {
           label: "I can go to top management with a problem and be heard.",
@@ -153,7 +153,7 @@ new Chart(document.getElementById("myChartSix"), {
           borderColor: "#000",
           pointBorderColor: "#fff",
           pointBackgroundColor: ["rgb(128, 0, 128, .5"], //purple
-          data: [1,0,0,1,4]
+          data: [0,1,4,1,0]
         },
         {
           label: 'I believe that senior management is "in touch" with the opinions and thinking of the people who work here.',
@@ -162,7 +162,7 @@ new Chart(document.getElementById("myChartSix"), {
           borderColor: "#000",
           pointBorderColor: "#fff",
           pointBackgroundColor: ["rgb(211, 84, 0, .5"], //orange
-          data: [0,0,0,3,3]
+          data: [0,3,3,0,0]
         }
       ]
     },
@@ -209,7 +209,7 @@ new Chart(document.getElementById("myChartSeven"), {
           borderColor: "#000",
           pointBorderColor: "#fff",
           pointBackgroundColor: ["rgb(0, 128, 0, .5)"], //green
-          data: [3,2,1,0,0]
+          data: [1,0,0,3,2]
         },
         {
           label: 'I can use my personal initiative and judgment in carrying out my work.',
@@ -219,7 +219,7 @@ new Chart(document.getElementById("myChartSeven"), {
           pointBorderColor: "#fff",
           pointBackgroundColor: ["rgb(0, 0, 255, .5)"], //blue
           pointBorderColor: "#fff",
-          data: [0,0,0,2,4]
+          data: [0,2,4,0,0]
         },
         {
           label: 'I seldom get a chance to do things without my boss "holding my hand".',
@@ -228,7 +228,7 @@ new Chart(document.getElementById("myChartSeven"), {
           borderColor: "#000",
           pointBorderColor: "#fff",
           pointBackgroundColor: ["rgb(255, 0, 0, .5)"], //red
-          data: [4,2,0,0,0]
+          data: [0,0,0,4,2]
         },
         {
           label: "I am very closely supervised in my work.",
@@ -237,7 +237,7 @@ new Chart(document.getElementById("myChartSeven"), {
           borderColor: "#000",
           pointBorderColor: "#fff",
           pointBackgroundColor: ["rgb(255, 255, 0, .5)"], //yellow
-          data: [2,1,1,1,1]
+          data: [1,1,1,2,1]
         },
       ]
     },
@@ -284,7 +284,7 @@ new Chart(document.getElementById("myChartEight"), {
           borderColor: "#000",
           pointBorderColor: "#fff",
           pointBackgroundColor: ["rgb(0, 128, 0, .5)"], //green
-          data: [3,2,0,1,0]
+          data: [0,1,0,3,2]
         },
         {
           label: 'At my company, the departments "rise and fall" as one; there is little territorialism here.',
@@ -294,7 +294,7 @@ new Chart(document.getElementById("myChartEight"), {
           pointBorderColor: "#fff",
           pointBackgroundColor: ["rgb(0, 0, 255, .5)"], //blue
           pointBorderColor: "#fff",
-          data: [0,1,1,1,3]
+          data: [1,1,3,0,1]
         },
         {
           label: "By and large, the different departments work cooperatively to an unusual degree here.",
@@ -303,7 +303,7 @@ new Chart(document.getElementById("myChartEight"), {
           borderColor: "#000",
           pointBorderColor: "#fff",
           pointBackgroundColor: ["rgb(255, 0, 0, .5)"], //red
-          data: [0,0,0,1,3]
+          data: [0,1,3,0,0]
         },
         {
           label: "I believe that conflicts between departments get in the way of getting things done.",
@@ -312,7 +312,7 @@ new Chart(document.getElementById("myChartEight"), {
           borderColor: "#000",
           pointBorderColor: "#fff",
           pointBackgroundColor: ["rgb(255, 255, 0, .5)"], //yellow
-          data: [3,1,0,2,0]
+          data: [0,2,0,3,1]
         },
       ]
     },
