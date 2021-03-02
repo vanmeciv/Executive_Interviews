@@ -33,7 +33,7 @@ img {
 h1 {
   font-weight: 200;
   font-size: 3em;
-  margin: 0 -30px 0.1em 0;
+  margin: 0 -70px 0.1em 0;
 }
 
 h2 {
@@ -45,6 +45,38 @@ h2 {
 }
 
 h3 {
+  margin: 0 -30px 0 0
+}
+
+#risk {
+  font-weight: 200;
+  font-size: 1.8em;
+  margin: 0 0 10px;
+  color: #999;
+  margin: 0 -30px 0 0
+}
+
+#info {
+  font-weight: 200;
+  font-size: 1.8em;
+  margin: 0 0 10px;
+  color: #999;
+  margin: 0 -28px 0 0
+}
+
+#auto {
+  font-weight: 200;
+  font-size: 1.8em;
+  margin: 0 0 10px;
+  color: #999;
+  margin: 0 -45px 0 0
+}
+
+#coland {
+  font-weight: 200;
+  font-size: 1.8em;
+  margin: 0 0 10px;
+  color: #999;
   margin: 0 -30px 0 0
 }
 
