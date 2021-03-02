@@ -1,5 +1,5 @@
 // Disable Right Click
-document.addEventListener('contextmenu', event => event.preventDefault());
+// document.addEventListener('contextmenu', event => event.preventDefault());
 
 //Executive Interviews
 window.onload = function() {
@@ -96,8 +96,12 @@ new Chart(document.getElementById("myChartFive"), {
         mode: null,
       },
       title: {
-        display: true,
+        display: false,
         text: 'Risk Taking'
+      },
+      legend: {
+        position: "top",
+        align: "center"
       },
     }
 });
@@ -190,8 +194,12 @@ new Chart(document.getElementById("myChartSix"), {
         mode: null,
       },
       title: {
-        display: true,
+        display: false,
         text: 'Infomation Access'
+      },
+      legend: {
+        position: "top",
+        align: "center"
       },
     }
 });
@@ -203,7 +211,7 @@ new Chart(document.getElementById("myChartSeven"), {
       labels: labels,
       datasets: [
         {
-          label: "I am managed by my boss too tightly.",
+          label: "I  am  managed  by my boss  too  tightly.",
           fill: true,
           backgroundColor: ["rgb(0, 128, 0, .5)"], //green
           borderColor: "#000",
@@ -265,8 +273,12 @@ new Chart(document.getElementById("myChartSeven"), {
         mode: null,
       },
       title: {
-        display: true,
+        display: false,
         text: 'Autonomy'
+      },
+      legend: {
+        position: "top",
+        align: "center"
       },
     }
 });
@@ -340,8 +352,12 @@ new Chart(document.getElementById("myChartEight"), {
         mode: null,
       },
       title: {
-        display: true,
+        display: false,
         text: 'Company Landscape'
+      },
+      legend: {
+        position: "top",
+        align: "center"
       },
     }
 });
