@@ -35,13 +35,13 @@ new Chart(document.getElementById("myChartFive"), {
           data: [0,1,5,0,0]
         },
         {
-          label: 'I am afraid to take chances with "risky" ideas in this organization.',
+          label: 'I am NOT afraid to take chances with "risky" ideas in this organization.',
           fill: true,
           backgroundColor: "rgb(0, 0, 255, .5)", //blue
           borderColor: "#000",
           pointBorderColor: "#fff",
           pointBackgroundColor: "rgb(0, 0, 255, .5)", //blue
-          data: [1,0,0,3,2]
+          data: [1,2,3,0,0]
         },
         {
           label: "I can take chances here without fear of negative repercussions.",
@@ -53,22 +53,22 @@ new Chart(document.getElementById("myChartFive"), {
           data: [0,2,4,0,0]
         },
         {
-          label: "I am discouraged from experimenting with new ways of solving company problems.",
+          label: "I am encouraged to experiment with new ways of solving company problems.",
           fill: true,
           backgroundColor: "rgb(255, 255, 0, .5)", //red
           borderColor: "#000",
           pointBorderColor: "#fff",
           pointBackgroundColor: "rgb(255, 255, 0, .5)", //red
-          data: [0,0,0,4,2]
+          data: [0,2,4,0,0]
         },
         {
-          label: "It is fatal for me to make a mistake.",
+          label: "It is NOT fatal for me to make a mistake.",
           fill: true,
           backgroundColor: "rgb(128, 0, 128, .5", //purple
           borderColor: "#000",
           pointBorderColor: "#fff",
           pointBackgroundColor: "rgb(128, 0, 128, .5", //purple
-          data: [0,0,0,4,2]
+          data: [0,2,4,0,0]
         }
       ]
     },
